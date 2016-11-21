@@ -1,0 +1,93 @@
+html {
+    font-family:"Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    color: #343434;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    display: -webkit-flex; /* Safari */
+    display: -ms-flexbox; /* Internet Explorer */
+    display: -moz-box; /* Mozilla Firefox */
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+    width: 100%;
+}
+
+.box {
+    width: 100%;
+    min-height: 200px;
+    box-sizing: border-box;
+    border: 1px solid #343434;
+}
+
+.header {
+    background-color: #d8d8d8;
+    overflow: hidden;
+    position: relative;
+}
+
+.featured1 {
+    background-color: darkgrey;
+}
+
+.featured2 {
+    background-color: lightgrey;
+}
+
+.about {
+    background-color: grey;
+}
+
+@media screen and (max-width: 399px) {
+    .container2 {
+        order: -1;
+    }
+    .featured1{
+        order: 1;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    .featured1 {
+        width: 40%;
+    }
+
+    #container2 {
+        width: 60%;
+        order: -1;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .featured1 {
+        width: 25%;
+        order: -1;
+    }
+
+    #container2 {
+        width: 50%;
+    }
+
+    .about {
+        width: 25%;
+        order: 1;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+#banner {
+    position: relative;
+    left: 100%;
+    margin-left: -200%;
+}
